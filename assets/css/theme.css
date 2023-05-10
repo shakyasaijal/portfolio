@@ -23,6 +23,7 @@
     --theme-white: #fff;
     --theme-bg: #353537;
     --theme-black: #242426;
+    --theme-dark-black: #000;
 }
 
 * {
@@ -122,4 +123,17 @@ h1 {
     left: 50%;
     position: relative;
     transform: translate(-50%, 0);
+}
+.active{
+    color:#00ffdd !important;
+}
+.text-center{
+    text-align: center;
+}
+.page-title{
+    padding: 80px 0;
+}
+.page-design-line{
+    margin: 0 auto;
+    width: 5%;
 }
