@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <title>Saijal Shakya | Contact</title>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LcN2ugUAAAAAClH6OrQp8KCdxAocOtpb_mUFKsp',
+          'theme': 'dark'
+        });
+      };
+    </script>
+
 </head>
 <body>
     <div class="top-nav content-container">
@@ -61,17 +70,34 @@
       <div class="page-content-container content-container">
         <div class="page-split-container">
           <div class="split">
-            <form action="javascript:void(0)" class="contact-form">
+            <form action="javascript:void(0)" class="contact-form" id="contact-form">
               <div class="grid-separation">
-                <input type="text" placeholder="Full Name *">
-                <input type="email" placeholder="Email *">
-                <input type="text" placeholder="Phone *">
-                <input type="text" placeholder="Subject *">
+                <div class="form-element">
+                  <input type="text" class="form-input" placeholder="Full Name *" id="full_name">
+                  <div id="full_name_error" class="form-error"></div>
+                </div>
+                <div class="form-element">
+                  <input type="email" class="form-input" placeholder="Email *" id="email">
+                  <div id="email_error" class="form-error"></div>
+                </div>
+                <div class="form-element">
+                  <input type="text" class="form-input" placeholder="Phone *" id="phone">
+                  <div id="phone_error" class="form-error"></div>
+                </div>
+                <div class="form-element">
+                  <input type="text" class="form-input" placeholder="Subject *" id="subject">
+                  <div id="subject_error" class="form-error"></div>
+                </div>
               </div>
-              <textarea rows="5" maxlength="200" placeholder="Your Message *"></textarea>
+              <textarea rows="5" class="form-input" maxlength="200" placeholder="Your Message *" id="message"></textarea>
+                <div id="message_error" class="form-error"></div>
+                <div class="recaptcha-container">
+                  <div id="html_element"></div>
+                </div>
+              <button type="submit" id="submit-btn" class="message-me" onclick="onSubmit()">MESSAGE ME</button>
             </form>
           </div>
-          <div class="split intro">
+          <div class="split info_container">
             <div class="info_panel">
               <div class="info_content">
                 <div class="info_image">
@@ -85,12 +111,66 @@
                 </div>
                 <div class="info_data">saijalshakya@gmail.com</div>
               </div>
+              <div class="info_content">
+                <p>Follow <a href="//github.com/shakyasaijal" target="_blank">@shakyasaijal</a></p>
+              </div>
             </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!--Latest blogs-->
+    <section class="blogs section-padding p-relative">
+      <div class="content-container bg-black">
+        <div class="section-title">
+          <h1>Latest Blogs</h1>
+          <div class="design_line"></div>
+        </div>
+        <div class="section-big-title">
+          <p>ARTICLES</p>
+        </div>
+        <div class="blogs_container bg-black">
+          <div class="blogs_content bg-bg">
+            <div class="blogs_data">
+              <div class="blogs_title">
+                <h2>Network Flow Problem: Maximum Flow</h2>
+              </div>
+              <div class="blogs_img">
+                <img src="../assets/images/blogs/network.webp" alt="Photo by Marius Masalar on Unsplash">
+              </div>
+              <div class="blogs_read">
+                <a href="//medium.com/@saijalshakya/network-flow-problem-maximum-flow-928fef9d3005" aria-label="Read More" class="link-effect" target="_blank">Read More <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <div class="blogs_data">
+              <div class="blogs_title">
+                <h2>Naive Bayesian Classification</h2>
+              </div>
+              <div class="blogs_img">
+                <img src="../assets/images/blogs/naive.webp" alt="Photo from Forbes">
+              </div>
+              <div class="blogs_read">
+                <a href="//medium.com/incwell-bootcamp/naive-bayesian-classification-2c585fbe1817" aria-label="Read More" class="link-effect" target="_blank">Read More <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+            <div class="blogs_data">
+              <div class="blogs_title">
+                <h2>Broadcasting: Binary operations on ...</h2>
+              </div>
+              <div class="blogs_img">
+                <img src="../assets/images/blogs/broadcast.webp" alt="Photo by Donald Giannatti on Unsplash">
+              </div>
+              <div class="blogs_read">
+                <a href="//medium.com/python-in-plain-english/broadcasting-binary-operation-on-arrays-aafc5b562783" aria-label="Read More" class="link-effect" target="_blank">Read More <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Latest blogs ends-->
 
     <footer>
       <div class="content-container">
@@ -103,5 +183,9 @@
       </div>
     </footer>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/contact.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 </body>
 </html>
