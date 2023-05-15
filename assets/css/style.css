@@ -537,3 +537,57 @@ footer .copy-right {
 /*
 * Pages: Card End
 */
+
+/*
+* Pages: Contact
+*/
+
+.page-split-container{
+  display: grid;
+  grid-template-columns: 50% 40%;
+}
+
+.contact-form .grid-separation{
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: 47.5% 47.5%;
+  column-gap: 5%;
+}
+
+.contact-form .grid-separation > input{
+  padding: 15px;
+  font-size: 1.1rem;
+  color: var(--theme-white);
+  font-family: 'Montserrat-Light';
+  border: none;
+  background-color: var(--theme-black);
+}
+
+.contact-form textarea{
+  width: 100%;
+  font-size: 1.1rem;
+  color: var(--theme-white);
+  font-family: 'Montserrat-Light';
+  padding: 10px;
+  margin-top: 2rem;
+  border: none;
+  background-color: var(--theme-black);
+  resize: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--theme-white);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--theme-white);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--theme-white);
+}
+
+/*
+* Pages: Contact End
+*/
