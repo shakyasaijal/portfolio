@@ -649,3 +649,67 @@ footer .copy-right {
 /*
 * Pages: Contact End
 */
+
+/*
+* Pages: Game lists
+*/
+
+.simple-card {
+  display: flex;
+  column-gap: 12.5%;
+  row-gap: 10%;
+  flex-wrap: wrap;
+}
+
+.simple-card .card{
+  width: 25%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.simple-card .card:hover .card-title{
+  text-decoration: underline;
+}
+
+.simple-card .img-container {
+  height: 200px;
+}
+
+.simple-card .img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.simple-card > .card {
+  margin: 2em 0;
+}
+
+.simple-card .card-title{
+  color: var(--theme-white);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.iframe-container{
+  height: 650px;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+.proof-of-work .proofs .github-proof {
+  color: var(--theme-white);
+  margin-top: 2rem;
+}
+
+.proof-of-work .proofs .github-proof a{
+  color: var(--theme-white);
+}
+
+.simple-card h2{
+  font-size: 1rem;
+}
+/*
+* Pages: Game lists End
+*/
