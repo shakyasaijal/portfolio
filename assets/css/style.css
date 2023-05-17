@@ -493,7 +493,7 @@ footer .copy-right {
   margin: 2em 0;
 }
 
-.card-body .card-title{
+.card-body .card-title, .reference_details{
   color: var(--theme-white);
   text-align: center;
   font-size: 1.2em;
@@ -709,6 +709,36 @@ footer .copy-right {
 
 .simple-card h2{
   font-size: 1rem;
+}
+
+.card-bg{
+  background-color: var(--theme-black);
+}
+
+.reference-card{
+  padding: 3rem;
+}
+
+.reference-card h2{
+  font-size: 1.3em;
+}
+
+.reference_details > div{
+  padding: 5px;
+}
+
+.reference_details a {
+  color: var(--theme-white);
+}
+.reference-card .credentials{
+  margin-top: 2rem;
+}
+
+.reference-card .credentials a{
+  background-color: var(--theme-bg) !important;
+  color: var(--theme-white);
+  text-decoration: none;
+  padding: 10px 25px;
 }
 /*
 * Pages: Game lists End
