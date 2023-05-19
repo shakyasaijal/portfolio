@@ -35,6 +35,57 @@
   position: relative;
 }
 
+.parent_nav a {
+  margin: 10px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.parent_nav:hover>ul {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+.child_nav {
+  display: none;
+  width: 10%;
+}
+
+.child_nav * {
+  background-color: var(--theme-nav-dropdown) !important;
+}
+
+.child_nav li {
+  color: var(--theme-white);
+  width: 100%;
+  margin-left: 0 !important;
+  padding: 5px 0;
+}
+
+.child_nav li a {
+  background-color: var(--theme-bg);
+  color: var(--theme-white) !important;
+  opacity: 1;
+  padding: 0 !important;
+}
+
+.child_nav li a.active {
+  color: #00ffdd !important;
+}
+
+.child_nav li a:hover{
+  color: var(--theme-color) !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  min-width: 8.65em;
+}
+
+
 /*
 * ====== Header End ======
 */
@@ -742,4 +793,25 @@ footer .copy-right {
 }
 /*
 * Pages: Game lists End
+*/
+
+/*
+* Page: About
+*/
+
+.detail_info{
+  margin-top: 2rem;
+  color: var(--theme-white);
+  line-height: 1.5em;
+}
+
+.about_page .intro_container{
+  padding-left: 2rem !important;
+}
+
+.about_page .info{
+  padding: 15px 0;
+}
+/*
+* Page: About End
 */

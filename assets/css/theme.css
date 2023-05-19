@@ -24,6 +24,7 @@
     --theme-bg: #353537;
     --theme-black: #242426;
     --theme-dark-black: #000;
+    --theme-nav-dropdown: rgb(6,6,7, 50%);
 }
 
 * {
