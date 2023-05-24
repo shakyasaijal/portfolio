@@ -528,6 +528,8 @@ footer .copy-right {
 
 .card .card-img-holder img{
   width: 100%;
+  height: 100%;
+  object-fit: scale-down;
   border-radius: 10px 10px 0 0;
   position: relative;
   top: 50%;
@@ -540,6 +542,10 @@ footer .copy-right {
   min-height: 16rem;
 }
 
+.companies-worked .card .card-body{
+  min-height: 5rem !important;
+}
+
 .cards > .card {
   margin: 2em 0;
 }
@@ -547,14 +553,13 @@ footer .copy-right {
 .card-body .card-title, .reference_details{
   color: var(--theme-white);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 
 .card .card-img-holder{
-  height: 208px;
+  height: 250px;
   max-height: 208px;
   border-radius: 10px 10px 0 0;
-  
 }
 
 .card-body .card-images {
@@ -940,4 +945,47 @@ footer .copy-right {
 
 /*
 * Page: About End
+*/
+
+/*
+* Page: Foobar
+*/
+
+.foobar-code{
+  margin-top: 2rem;
+}
+
+.code_container {
+  margin-top: 3rem;
+}
+
+.code_container .code_img_cont {
+  height: 550px;
+  width: auto;
+  text-align: center;
+}
+
+.code_container .code_img_cont img{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.code_container .code{
+  margin-bottom: 5rem;
+}
+
+.code h3{
+  color: var(--theme-white);
+  padding-bottom: 2rem;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+.companies-worked .card-footer a{
+  background-color: var(--theme-dark-black) !important;
+}
+
+/*
+* Page: Foobar End
 */
