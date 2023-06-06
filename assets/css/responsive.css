@@ -97,6 +97,16 @@
     .skills .skills-content > .skills_data{
         flex: unset;
     }
+    .card {
+        width: 100%;
+    }
+    .page-design-line{
+        width: unset;
+    }
+    .design_line::after {
+        margin: 0 auto;
+    }
+    
 }
 
 /* Small Devices, Tablets */
