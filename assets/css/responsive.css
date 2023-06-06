@@ -1,0 +1,114 @@
+/*Extra Large Device*/
+@media only screen and (min-width: 1201px){
+	
+}
+/*Extra Large Device*/
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
+	
+}
+/* iPad Pro*/
+@media only screen and (min-width : 1024px) and (max-width : 1100px) {
+	
+}
+
+/*Large Device*/
+@media only screen and (min-width: 992px) and (max-width : 1200px) {
+
+}
+/*Medium Device*/
+
+@media only screen and (min-width: 768px) and (max-width : 991px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    .saijal_menu{
+        display: none;
+    }
+
+    .blogs .blogs_content{
+        flex-direction: column;
+    }
+
+    .section-big-title{
+        font-size: 50px;
+    }
+
+    .welcome .header-column{
+        grid-template-columns: 100%;
+    }
+
+    .section-padding{
+        padding: 40px 0;
+    }
+    .section-big-title{
+        top: 2%;
+    }
+    .intro .display_image{
+        height: unset;
+    }
+    .intro .display_img_container{
+        flex: unset;
+        padding: 15px;
+    }
+    .content-container {
+        width: 90%;
+    }
+    .intro .info{
+        padding: 15px 0;
+    }
+    h1{
+        font-size: 1.6em;
+    }
+    .col-1{
+        text-align: center;
+    }
+    .slider-column{
+        padding: 20px 0;
+    }
+    .mb-big-title{
+        top: 4%;
+    }
+    .skills .skills-content {
+        margin-top: 5rem;
+        row-gap: 2rem;
+        position: relative;
+        left: unset;
+        transform: unset;
+    }
+    .skills_title{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .skills .skills_info_container .skills_info{
+        width: 100%;
+    }
+    .skills .skills-content .skills_img_holder{
+        margin: 0 auto;
+    }
+    .skills .skills_info_container {
+        column-gap: 50px;
+        row-gap: 10px;
+    }
+    .skills .skills-content .skills_data {
+        grid-template-columns: 100%;
+    }
+    .skills .skills-content > .skills_data{
+        flex: unset;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 320px) {
+	
+}
+
+/* Mobile Devices, Tablets */
+@media only screen and (min-width: 450px) and (max-width : 767px) {
+
+}
+/* Mobile Devices, Tablets */
+@media only screen and (min-width: 600px) and (max-width : 767px) {
+	
+}
