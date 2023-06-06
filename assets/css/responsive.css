@@ -18,7 +18,27 @@
 /*Medium Device*/
 
 @media only screen and (min-width: 768px) and (max-width : 991px) {
-	
+	.saijal_menu{
+        display: none;
+    }
+    .content-container {
+        width: 90%;
+    }
+    .simple-card .card {
+        width: 43%;
+    }
+    .design_line::after {
+        margin: 0 auto;
+    }
+    .page-design-line{
+        width: unset;
+    }
+    .card {
+        width: 47%;
+    }
+    .cards {
+        column-gap: 5.5%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -108,6 +128,15 @@
     }
     .simple-card .card {
         width: 100%;
+    }
+    .game-holder .github-img-container img{
+        width: 100%;
+    }
+    .iframe-container {
+        width: 100%;
+    }
+    .game-holder .proof-of-work{
+        margin-top: 4rem;
     }
 }
 
