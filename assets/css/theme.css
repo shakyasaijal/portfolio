@@ -108,6 +108,10 @@ h1 {
     background-color: var(--theme-black) !important;
 }
 
+.bg-white{
+    background-color: #fff;
+}
+
 .bg-bg *{
     background-color: var(--theme-bg) !important;
 }

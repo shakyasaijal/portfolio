@@ -215,7 +215,11 @@ ul {
 .intro .info_panel {
   margin-top: 4rem;
 }
-
+.intro p{
+  color: var(--theme-white);
+  text-align: justify;
+  line-height: 1.5em;
+}
 .intro .info_panel .info_content {
   display: flex;
   padding-bottom: 20px;
@@ -1009,7 +1013,9 @@ footer .copy-right {
 
 .page-divider .page-img-container img{
   text-align: center;
+  border-radius: 15px;
   width: 100%;
+  box-shadow: 0px 0px 24px -4px #000;
 }
 
 .page-divider .page-1, .page-divider .page-2{
@@ -1048,5 +1054,238 @@ footer .copy-right {
   padding: 10em 0;
 }
 /*
-* Page: Skills and Services ENd
+* Page: Skills and Services End
+*/
+
+/*
+* Page: Project Description
+*/
+
+.project_description .project_banner {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 30px;
+  height: 350px;
+}
+
+.project_description .project_banner img{
+  width: 100%;
+  object-fit: scale-down;
+  border-radius: 15px;
+  border: 3px solid white;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  box-shadow: 0px 0px 24px -4px black;
+}
+
+.project_description .project_intro p.intro{
+  color: var(--theme-white);
+  margin-top: 35px;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.project_description .languages{
+  margin-top: 2em;
+}
+
+.project_description h2, .project_description h2 a{
+  padding: 20px 0;
+  color: var(--theme-white);
+}
+
+.project_description .languages_list{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.project_description .lang_img_cont{
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.project_description .lang_img_cont img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.project_description .awesome_features{
+  margin-top: 35px;
+  color: var(--theme-white);
+}
+
+.project_description .awesome_features .feature_listing{
+  padding: 0 2em;
+  text-indent: 10px;
+  line-height: 2em;
+}
+
+.try_it a:hover{
+  color: var(--theme-color);
+}
+
+/*
+* Page: Project Description End
+*/
+
+/*
+* Page: Loved Work
+*/
+
+.loved_work {
+  padding: 20px 0;
+}
+
+.loved_work h1{
+  padding: 10px 0 8px 0;
+  border-bottom: 6px solid var(--theme-color);
+  font-size: 1.5em;
+  width: 15%;
+}
+
+.loved_work p:first-child{
+  margin-top: 3rem;
+}
+
+.loved_work p{
+  color: #fff;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.loved_work .mt{
+  margin-top: 2rem;
+}
+
+.loved_work .proof_img{
+  display: flex;
+  flex-wrap: nowrap;
+  row-gap: 5rem;
+  flex-direction: column;
+}
+
+.loved_work .proof_img_cont{
+  height: 400px;
+}
+
+.loved_work .proof_img_cont img{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}
+/*
+* Page: Loved Work End
+*/
+
+/*
+* Page: Loved Articles
+*/
+
+.articles-liked{
+  display: flex !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.loved_articles .service_info{
+  line-height: 1.5em;
+}
+
+.loved_articles .service_info a{
+  text-transform: uppercase;
+  color: #00ffba;
+  font-weight: bold;
+}
+
+.loved_articles .projects-btn{
+  background-color: var(--theme-color) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--theme-white);
+  border-radius: 6px;
+  line-height: 60px;
+  height: 60px;
+  width: 180px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff !important;
+  margin-top: 1.5em;
+}
+
+.loved_articles .page-divider .page-img-container img{
+  top: 50%;
+  position: relative;
+  transform: translate(0, -50%);
+}
+
+.loved_work .project-view-btn{
+  background-color: var(--theme-color) !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--theme-white);
+  border-radius: 6px;
+  line-height: 60px;
+  height: 60px;
+  /* width: 180px; */
+  font-weight: 600;
+  text-align: center;
+  color: #fff !important;
+  margin-top: 1.5em;
+  padding: 0 10px;
+}
+
+.loved_work .project-view-btn a{
+  color: var(--theme-white);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.ml-2{
+  margin-left: 2rem;
+}
+/*
+* Page: Loved Articles End
+*/
+
+/*
+* Page: My Codes
+*/
+
+.codes_list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  row-gap: 5rem;
+}
+
+.codes_list .code_img_cont{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.codes_list .code_img_cont img{
+  width: 100%;
+  height: 100%;
+}
+
+.codes_list h2{
+  color: var(--theme-white);
+  font-size: 1em;
+}
+
+
+/*
+* Page: My Codes End
 */
