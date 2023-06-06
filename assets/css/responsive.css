@@ -39,6 +39,35 @@
     .cards {
         column-gap: 5.5%;
     }
+    .page-divider {
+        flex-direction: column;
+    }
+    .skills-container .heading{
+        text-align: center;
+    }
+    .skills-container.bg-black.padding {
+        padding: 4em 0;
+    }
+    .skills-container .heading{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .skills-container h2{
+        font-size: 1.3em;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .page-divider .page-img-container {
+        width: unset;
+        height: unset;
+    }
+    .skills-container .languages_used {
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+    .skills-container .languages_used > .language_img_container {
+        width: 40%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -146,6 +175,31 @@
     }
     .contact-page .info_panel{
         margin-top: 4rem;
+    }
+    .page-divider {
+        flex-direction: column;
+    }
+    .page-divider .page-img-container {
+        width: unset;
+        height: unset;
+    }
+    .skills-container .heading{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .skills-container h2{
+        font-size: 1.3em;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .skills-container .languages_used {
+        flex-wrap: wrap;
+    }
+    .skills-container .languages_used > .language_img_container {
+        width: 40%;
+    }
+    .skills-container.bg-black.padding {
+        padding: 4em 0;
     }
 }
 
