@@ -138,6 +138,15 @@
     .game-holder .proof-of-work{
         margin-top: 4rem;
     }
+    .page-split-container {
+        grid-template-columns: 100%;
+    }
+    .contact-form .grid-separation {
+        grid-template-columns: 100%;
+    }
+    .contact-page .info_panel{
+        margin-top: 4rem;
+    }
 }
 
 /* Small Devices, Tablets */
