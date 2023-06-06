@@ -106,7 +106,9 @@
     .design_line::after {
         margin: 0 auto;
     }
-    
+    .simple-card .card {
+        width: 100%;
+    }
 }
 
 /* Small Devices, Tablets */
