@@ -21,6 +21,13 @@
 	.saijal_menu{
         display: none;
     }
+    #mobile-nav{
+        display: block;
+    }
+    .site_menu .logo-container {
+        flex: unset;
+        z-index: 2;
+    }
     .content-container {
         width: 90%;
     }
@@ -68,10 +75,58 @@
     .skills-container .languages_used > .language_img_container {
         width: 40%;
     }
+    .loved_work h1 {
+        width: 25%;
+    }
+    .project-view-btn.ml-2{
+        margin-left: 10px;
+    }
+    .loved_work .proof_img_cont {
+        height: unset;
+    }
+    .loved_articles .page-divider .page-img-container img {
+        top: unset;
+        position: unset;
+        transform: unset;
+    }
+    .about .section-big-title{
+        top: 1rem !important;
+    }
+    .mb-pt{
+        padding-top: 35px;
+    }
+    .loved_articles h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .loved_work h1 {
+        width: 34%;
+    }
+    .codes_list .code_img_cont {
+        width: unset;
+    }
+    .intro .display_img_container{
+        margin: 0 auto;
+        flex: unset;
+    }
+    .intro_container h1 {
+        text-align: center;
+        font-size: 1.6em;
+    }
+    .skills .skills-content > .skills_data {
+        flex: unset;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
+    #mobile-nav{
+        display: block;
+    }
+    .site_menu .logo-container {
+        flex: unset;
+        z-index: 2;
+    }
     .saijal_menu{
         display: none;
     }
@@ -200,6 +255,54 @@
     }
     .skills-container.bg-black.padding {
         padding: 4em 0;
+    }
+    .loved_work h1 {
+        width: 60%;
+    }
+    .project-view-btn.ml-2{
+        margin-left: unset;
+    }
+    .loved_work .proof_img_cont {
+        height: unset;
+    }
+    .loved_articles .page-divider .page-img-container img {
+        top: unset;
+        position: unset;
+        transform: unset;
+    }
+    .about .section-big-title{
+        top: 1rem !important;
+    }
+    .mb-pt{
+        padding-top: 35px;
+    }
+    .loved_articles h2{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .code_container .code_img_cont {
+        height: unset;
+    }
+    .codes_list .code_img_cont {
+        width: unset;
+    }
+    .about .section-big-title {
+        font-size: 35px !important;
+    }
+    .project_description .project_banner {
+        width: unset;
+    }
+    .project_description .project_intro p.intro {
+        margin-top: unset;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .project_description .languages_list {
+        flex-wrap: wrap;
+        row-gap: 3em;
+    }
+    .project_description .lang_img_cont {
+        flex: 50%;
     }
 }
 
