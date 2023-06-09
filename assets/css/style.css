@@ -1524,6 +1524,9 @@ footer .copy-right {
   font-size: 1em;
 }
 
+.bg-dark-black{
+  background-color: var(--theme-dark-black) !important;
+}
 
 /*
 * Page: My Codes End
